@@ -14,7 +14,7 @@ class App extends Component {
               super(props)
               this.state = {
               items: [
-                  {id:1, text:"Bug1", done:2},
+                  {id:1, text:"Bug1", done:1},
                   {id:2, text:"Bug2", done:1},
                   {id:3, text:" Feature1",done:1},
                   {id:4, text:"Feature2", done:1},
@@ -139,8 +139,7 @@ this.setState({items});
 
             return (
               <div className= "app">
-                    <BacklogMap items={backlog} handleChange={this.updateBacklog1} handleAddTask={this.addBacklog} />
-                    {/* deleteChange={this.deleteTask} */}
+                    <BacklogMap items={backlog} handleChange={this.updateBacklog1} handleAddTask={this.addBacklog} deleteChange={this.deleteTask}/>
                     <ProgressMap items = {progress} handleChange={this.updateBacklog2} /> 
                     <FinalStageMap items = {finalStage} handleChange={this.updateBacklog3}/>
                     <Finished items = {finished} handleChange={this.updateBacklog4}/>

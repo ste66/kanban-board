@@ -1,0 +1,115 @@
+$mainBg: #bd4c77;
+$inputBg: #e6c1e6;
+$btnBg: #96b87e;
+$buttonBg: #3a419c;
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.app {
+  height: 100vh;
+  background: $mainBg;
+  color: black;
+  font-weight: bold;
+  font-size: 25px;
+  overflow: scroll;
+  display: flex;
+
+  .btn {
+    border: none;
+    font-size: 1.2em;
+    padding: 20px;
+    width: 150px;
+    background: $btnBg;
+    color: black;
+    font-weight: 600;
+    cursor: pointer;
+    &:focus {
+      outline: none;
+    }
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+
+  .backlog-container {
+    padding: 20px;
+    .backlog-form {
+      padding-top: 30px;
+      .input-item {
+        input {
+          padding: 10px;
+          border: none;
+          background: $inputBg;
+          margin-right: 10px;
+          color: black;
+          font-size: 1.2em;
+          min-width: 300px;
+        }
+      }
+    }
+    .backlog1 {
+      padding-top: 120px;
+      .backlog-item {
+        padding: 5px 10px;
+        background: $inputBg;
+        margin: 10px 0;
+        width: 250px;
+        font-size: 1.2em;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+  }
+
+  .progress-container {
+    padding-top: 300px;
+    margin-right: 50px;
+
+    .inProgress {
+      padding: 5px 10px;
+      background: $inputBg;
+      margin: 10px 0;
+      width: 250px;
+      font-size: 1.2em;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  .FinalStage-container {
+    padding-top: 300px;
+    margin-left: 150px;
+    .finalStage {
+      padding: 5px 10px;
+      background: $inputBg;
+      margin: 10px 0;
+      width: 250px;
+      font-size: 1.2em;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  .finished-container {
+    padding-top: 300px;
+    margin-left: 150px;
+    .finished {
+      padding: 5px 10px;
+      background: $inputBg;
+      margin: 10px 0;
+      width: 250px;
+      font-size: 1.2em;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+  .button {
+    color: $buttonBg;
+  }
+}
